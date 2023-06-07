@@ -18,15 +18,4 @@
     text-align: center;
     margin-top: 30px;
 }
-/* Default styles for all screen sizes */
-body {
-    font-size: 16px;
-  }
-  
-  /* Media query for screens with a maximum width of 768 pixels */
-  @media (max-width: 768px) {
-    body {
-      font-size: 14px;
-    }
-  }
   
