@@ -1,0 +1,32 @@
+.box{
+    margin: 10px;
+    text-align: center;
+    width:20px;
+    background-color: whitesmoke;
+}
+.numHold{
+    font-size: 50px;
+    text-align: center;
+}
+.butt{
+    text-align: center;
+}
+.restart-butt{
+    text-align: right;
+}
+.container{
+    text-align: center;
+    margin-top: 30px;
+}
+/* Default styles for all screen sizes */
+body {
+    font-size: 16px;
+  }
+  
+  /* Media query for screens with a maximum width of 768 pixels */
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+  }
+  
