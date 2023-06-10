@@ -12,6 +12,7 @@ for(let i=1;i<=90;i++){
     if(i%10===0){
         numContainer.appendChild(newLine);
     }
+
 }
 function numCall(){
     let randomNumber= getRandomNumber();
@@ -23,6 +24,8 @@ function numCall(){
     
     let ans= document.getElementById(randomNumber);
     ans.style.backgroundColor= "lightcoral";
+
+    
 }
 
 
