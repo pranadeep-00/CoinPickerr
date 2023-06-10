@@ -1,4 +1,7 @@
 let numContainer= document.getElementById("numberContainer");
+let PreviousNum1 = document.getElementById("preNumPlacer-1");
+let PreviousNum2 = document.getElementById("preNumPlacer-2");
+let PreviousNum3 = document.getElementById("preNumPlacer-3");
 
 
 for(let i=1;i<=90;i++){
@@ -9,13 +12,17 @@ for(let i=1;i<=90;i++){
     numElement.placeholder=i;
     numElement.id=i;
     numContainer.appendChild(numElement);
+    document.getElementById(i).disabled=true;
     if(i%10===0){
         numContainer.appendChild(newLine);
     }
 
 }
+const arr=[];
+count=0;
 function numCall(){
     let randomNumber= getRandomNumber();
+    arr.push(randomNumber);
     let utterance = new SpeechSynthesisUtterance(randomNumber);
     // Utterance.lamg="tr";
     speechSynthesis.speak(utterance);
@@ -24,8 +31,11 @@ function numCall(){
     
     let ans= document.getElementById(randomNumber);
     ans.style.backgroundColor= "lightcoral";
+    PreviousNum1.textContent=arr[count-3];
+    PreviousNum2.textContent=arr[count-2];
+    PreviousNum3.textContent=arr[count-1];
+    count++;
 
-    
 }
 
 
@@ -47,3 +57,10 @@ function getRandomNumber() {
 function Restart(){
     location.reload();
 }
+function startGame(){
+  setTimeout(function repeat() {
+    numCall();
+    setTimeout(repeat, 5000); 
+  }, 5000);
+}
+

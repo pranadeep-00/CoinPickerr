@@ -6,37 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./coin.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12 order-1 ">
-                <div class="restart-butt">
-                    <button onclick="Restart()">
-                        Restart
-                    </button>
-                </div>
-                
-                <div id="numberContainer" class="container d-flex">
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="restart-butt">
+                        <button onclick="Restart()" class="Butt-2">
+                            Restart
+                        </button>
+                    </div>
                     
-                </div>
-            
-                <p id="numPlacer" class="numHold">
-            
-                </p>
-            
-                <div class="butt">
-                    <button onclick="numCall()">
-                        Click here
+                    <div id="numberContainer" class="main-container">
+                        
+                    </div>
+                    <div class="d-flex flex-row">
+                        <p id="preNumPlacer-1" class="numHold-1">
+    
+                        </p>
+                        <p id="preNumPlacer-2" class="numHold-1">
+        
+                        </p>
+                        <p id="preNumPlacer-3" class="numHold-1">
+        
+                        </p>
+                    </div>
+                
+                    <p id="numPlacer" class="numHold">
+                              
+                    </p>
+                
+                    <div class="butt">
+                        <button onclick="numCall()" class="Butt-1">
+                            Click here
+                        </button>
+                    </div>
+                    <button onclick="startGame()">
+                        Start Game
                     </button>
+    
                 </div>
-
             </div>
         </div>
+
     </div>
+
             
     <script src="coin.js"></script>
 </body>
