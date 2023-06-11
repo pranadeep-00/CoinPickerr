@@ -58,9 +58,13 @@ function Restart(){
     location.reload();
 }
 function startGame(){
-  setTimeout(function repeat() {
-    numCall();
-    setTimeout(repeat, 5000); 
-  }, 5000);
+  let check= document.getElementById("myCheckbox");
+    setTimeout(function repeat() {
+      if(check.checked===true){
+        numCall();
+      }
+        setTimeout(repeat, 5000); 
+      },5000);
 }
+
 

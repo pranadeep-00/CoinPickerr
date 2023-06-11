@@ -2,7 +2,7 @@
     margin-right: 10px;
     margin-bottom: 10px;
     text-align: center;
-    width:30px;
+    width:25px;
     background-color: whitesmoke;
 }
 .numHold{
@@ -28,6 +28,10 @@
     text-align: center;
     margin-top: 30px;
 }
+.Butt-1{
+    border-radius: 10px;
+    width: 150px;
+}
 .Butt-1:hover{
     background: #79f594;
     box-shadow: 0 0 5px #82e396, 0 0 25px #82edaf, 0 0 50px #84e9ab, 0 0  200px #7fdeb3;
@@ -44,8 +48,91 @@ button::after{
     content:"";
     z-index: -1;
 }
+.Butt-2{
+    border-radius: 10px;
+    width: 80px;
+}
 .Butt-2:hover{
     background: #ff96ad;
     box-shadow: 0 0 5px #ff96ad, 0 0 25px #ff96ad, 0 0 50px #ff96ad, 0 0  200px #ff96ad;
 }
+
+body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+/* Styling for the toggle switch container */
+.toggle-switch {
+    margin-top: 15px;
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+  }
   
+  /* Hide the default checkbox */
+  .toggle-switch input {
+    display: none;
+  }
+  
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  .toggle-switch input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  .toggle-switch input:checked + .slider:before {
+    transform: translateX(20px);
+  }
+  .Auto-Switch{
+    color: White;
+    font-size: 15px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+
+  }
+
+.startButt{
+    border-radius: 10px;
+    text-align: center;
+    width: 120px;
+}
+.startButt:hover{
+        background: #d08cef;
+        box-shadow: 0 0 5px #ff96fd, 0 0 25px #ff96ec, 0 0 50px #ff96ef, 0 0  200px #ff96e6;
+}

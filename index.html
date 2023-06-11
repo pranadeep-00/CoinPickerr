@@ -15,10 +15,24 @@
     <div>
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="restart-butt">
-                        <button onclick="Restart()" class="Butt-2">
-                            Restart
+                <div class="col-12">
+                    <div class="d-flex flex-column">
+                        <div>
+                            <label for="myCheckbox" class="Auto-Switch" > AutoPlay </label>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="myCheckbox">
+                                <span class="slider"></span>
+                            </label>
+
+                            <div class="restart-butt">
+                                <button onclick="Restart()" class="Butt-2">
+                                    Restart
+                                </button>
+                            </div>
+                        </div>
+    
+                        <button onclick="startGame()" class="startButt">
+                            Start Game
                         </button>
                     </div>
                     
@@ -46,9 +60,8 @@
                             Click here
                         </button>
                     </div>
-                    <button onclick="startGame()">
-                        Start Game
-                    </button>
+
+                    
     
                 </div>
             </div>
